@@ -133,3 +133,69 @@ greet()           # Hello, Guest
 greet("Jahed")    # Hello, Jahed
 
 ```
+
+
+# Python Data Types: List, Tuple, Set, Dictionary
+
+## List
+- Ordered
+- Mutable (can change items)
+- Allows duplicate values
+
+### Code Example
+```python
+greet = ["Hello", "World", "Bangladesh"]
+greet[1] = "BD"  # change value
+print(greet)  # ['Hello', 'BD', 'Bangladesh']
+```
+
+## Tuple
+- Ordered  
+- Immutable (cannot change items)  
+- Allows duplicate values  
+
+### Code Example
+```python
+coordinates = (10, 20)
+print(coordinates[0])  # 10
+```
+## Set
+- Unordered  
+- No duplicate values  
+- Mutable (can add/remove items, but items themselves must be immutable)  
+
+### Code Example
+```python
+colors = {"red", "green", "blue"}
+colors.add("yellow")
+colors.remove("green")
+print(colors)
+```
+
+## Dictionary
+- Unordered (Python 3.7+ maintains insertion order)  
+- Stores data in **key-value** pairs  
+- Keys must be unique and immutable  
+
+### Code Example
+```python
+person = {"name": "Jahed", "age": 25}
+print(person["name"])  # Jahed
+```## List Comprehension
+
+List comprehension is a concise way to create lists.
+
+### Example: Create a list of squares from 1 to 5
+```python
+squares = [x**2 for x in range(1, 6)]
+print(squares)  # [1, 4, 9, 16, 25]
+```
+
+## Dictionary Manipulation
+
+### 1. Access Values
+#### Example:
+```python
+person = {"name": "Jahed", "age": 25}
+print(person["name"])  # Jahed
+```
